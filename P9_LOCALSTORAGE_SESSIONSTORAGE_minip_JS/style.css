@@ -1,0 +1,57 @@
+body {
+    background-color: #ccc;
+    color: #222;
+    font-family: sans-serif;
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    opacity: 0;
+    animation: aparecer 1s forwards;
+    text-align: center;
+}
+
+.modal h2 {
+    background: linear-gradient(#222, #999);
+    color: #111;
+    display: inline-flex;
+    /* border: 2px dashed #222; */
+    padding: 6px;
+}
+
+button {
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: #5c5;
+    padding: 5px 15px;
+    border-radius: 7px;
+    margin: 8px 15px;
+    border: 2px solid #222;
+}
+
+button:hover {
+    background: #2c2;
+    box-shadow: 0 0 5px #fff;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

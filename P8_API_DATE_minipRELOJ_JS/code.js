@@ -42,15 +42,21 @@
 "use strict";
 
 const addZeros = n => {
-    if (n.toString().length < 2) return "0".concat(n);
-    else return n;
+    if (n.toString().length < 2) return "0".concat(n);  //Para ocupar el length, primero se debe utilizar el toString, ya que de no hacerlo de este modo el length no funciona
+    return n;   //No se utiliza el else, ya que si pasa el if, cuando llegue a un return se acaba la función, de lo contrario esta seguirá y acabará cuando llegue al siguiente return
 }
 
 const actualizarHora = ()=> {
     const time = new Date();
-    let horas = time.getHours();
-    let minutos = time.getMinutes();
-    let segundos = time.getSeconds();
+    let horas = addZeros(time.getHours());
+    let minutos = addZeros(time.getMinutes());
+    let segundos = addZeros(time.getSeconds());
+
+    document.querySelector(".horas").textContent = horas;   //Aquí no se utiliza innerHTML porque no se utilizarán etiquetas ni nada, solo se ocupa el contenido
+    document.querySelector(".minutos").textContent = minutos;
+    document.querySelector(".segundos").textContent = segundos;
 }
 
-// document.querySelector(.horas)
+actualizarHora();   //Esto se hace, ya que si solo se utiliza el temporizador, el reloj se iniciará en 0 ya que la función no se ejecutar hasta después de 1 segundo, y gracias a esto primero se ejecuta la función y posterior se ejecuta el temporizador
+
+setInterval(actualizarHora, 1000);    //Recordar que esto es un temporizador; ASIMISMO setInterval YA NO SE USA*** PORQUE CONSUME MUCHOS RECURSOS, hoy en día si se quiere trabajar con esto, existen librerías y ese tipo de cosas que ayudan a que se consuma menos recursos
