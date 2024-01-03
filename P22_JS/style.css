@@ -1,0 +1,11 @@
+body {
+    background-color: #ddd;
+    color: #222;
+    font-family: sans-serif;
+}
+
+body, h2, div, input, button {
+    padding: 0;
+    margin: 0;
+}
+
