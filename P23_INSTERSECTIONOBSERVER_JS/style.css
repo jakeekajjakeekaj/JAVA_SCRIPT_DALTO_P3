@@ -1,0 +1,33 @@
+body {
+    background-color: #ddd;
+    color: #222;
+    font-family: sans-serif;
+    /* text-align: center; */
+}
+
+body, h2, div, input, button {
+    padding: 0;
+    margin: 0;
+}
+
+.caja {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 1px solid #000;
+    padding: 80px;
+    background: #aaa;
+}
+.caja:nth-child(2) {
+    background: #e00;
+}
+.caja:nth-child(3) {
+    background: #0d0;
+}
+.caja:nth-child(4) {
+    color: #eee;
+    background: #00f;
+}

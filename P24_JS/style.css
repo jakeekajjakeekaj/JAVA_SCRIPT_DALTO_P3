@@ -2,6 +2,7 @@ body {
     background-color: #ddd;
     color: #222;
     font-family: sans-serif;
+    /* text-align: center; */
 }
 
 body, h2, div, input, button {
