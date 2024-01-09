@@ -2,10 +2,10 @@ body {
     background-color: #ddd;
     color: #222;
     font-family: sans-serif;
-    /* text-align: center; */
+    text-align: center;
 }
 
-body, h2, div, input, button {
+body, h3, p, div, input, button {
     padding: 0;
     margin: 0;
 }

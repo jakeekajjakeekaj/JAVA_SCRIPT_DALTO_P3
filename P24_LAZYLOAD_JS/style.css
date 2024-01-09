@@ -1,0 +1,77 @@
+body {
+    background-color: #ddd;
+    color: #222;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body, h3, p, div, input, button {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    padding: 0 0 40px 0;
+}
+
+.publicacion {
+    text-align: left;
+    margin: 15px 15px 75px 15px;
+    opacity: 0;
+    animation: aparecer 1s forwards 0.5s;
+}
+.publicacion p {
+    padding: 15px 30px;
+    border-left: 2px solid #48e;
+}
+.publicacion h3 {
+    color: #48e;
+    padding: 0 5px 5px 5px;
+    border-radius: 0 0 3px 0;
+    border-bottom: 2px solid #48e;
+    display: inline-block;
+    /* padding-right: 3px; */
+    /* width: 170px; */
+}
+
+.comentarios {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-radius: 0 0 0 3px;
+    border-left: 2px solid #48e;
+}
+
+.comentario {
+    flex-grow: 1;
+    border-radius: 7px 0 0 7px;
+    border: none;
+    margin-left: 3px;
+    margin-right: -7px;
+    background: #ccc;
+    padding: 9px 0;
+}
+
+.enviar {
+    min-width: 60px;
+    padding: 6px 10px;
+    /* border-radius: 0 7px 7px 0; */
+    border-radius: 7px;
+    border: none;
+    background: #49f;
+    cursor: pointer;
+    /* margin-left: 4px; */
+}
+.enviar:hover {
+    background: #4af;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
