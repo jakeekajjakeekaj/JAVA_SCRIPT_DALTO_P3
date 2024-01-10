@@ -1,0 +1,21 @@
+body {
+    background-color: #ddd;
+    color: #222;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body, h3, p, div, input, button {
+    padding: 0;
+    margin: 0;
+}
+
+.prueba {
+    background: #bbb;
+    width: 200px;
+    height: 200px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
