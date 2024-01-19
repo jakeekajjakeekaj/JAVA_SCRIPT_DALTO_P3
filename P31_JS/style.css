@@ -1,0 +1,12 @@
+body {
+    background-color: #ddd;
+    color: #222;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body, h3, p, div, input, button {
+    padding: 0;
+    margin: 0;
+}
+
